@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!------<title> Website Layout | CodingLab</title>------>
+  <link rel="stylesheet" href="CSSFILE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="img">
+    <div class="center">
+      <div class="title">FACE RECOGNITION</div>
+
+      
+        <button>
+          
+          <form action="http://ip-address:5000/main1" method="GET">
+            <input type="submit" class="btn btn-info" VALUE="IMAGE"  STYLE="height: 55px;
+            width: 170px;
+            border-radius: 5px;
+            border: none;
+            margin: 0PX 10px;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 8px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;">
+          </form>
+        </button>
+        <button>
+          
+          <form action="http://ip-address:5000/video" method="GET">
+            <input type="submit" class="btn btn-info" VALUE="REMOTE CAMERA"  STYLE="height: 55px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            margin: 0 10px;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;" >
+          </form>
+        </button>
+        <button>
+          
+          <form action="http://ip-address:5000/video_1" method="GET">
+            <input type="submit" class="btn btn-info" VALUE="PC CAMERA" STYLE="height: 55px;
+            width: 170px;
+            border-radius: 5px;
+            border: none;
+            margin: 0PX 10px;
+            border: 2px solid white;
+            
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;">
+          </form>
+        </button>
+      
+    </div>
+  </div>
+
+
+  <script>
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          $('#blah')
+            .attr('src', e.target.result)
+            .width(150)
+            .height(200);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+
+
+
+
+
+</body>
+
+</html>
